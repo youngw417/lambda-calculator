@@ -1,5 +1,7 @@
 import React from "react";
+import { prependToMemberExpression } from "@babel/types";
 
-const Display = () => {
-  return <div className="display">{/* Display any props data here */}</div>;
+export const Display = (props) => {
+  return <div className="display">{/* Display any props data here */
+  props.show}</div>;
 };
